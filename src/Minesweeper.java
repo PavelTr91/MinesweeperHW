@@ -61,8 +61,8 @@ public class Minesweeper {
 	}
 	
 	public static void outputToFile(char[][] mineField) {
-		for (int i = 1; i <= mineField.length; i++) {
-			for (int j = 1; j <= mineField[i].length; j++) {
+		for (int i = 1; i < mineField.length - 1; i++) {
+			for (int j = 1; j < mineField[i].length - 1; j++) {
 				System.out.print(mineField[i][j]);
 			}
 			System.out.println();
