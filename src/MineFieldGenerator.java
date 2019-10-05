@@ -1,3 +1,5 @@
+//Author: Pavel Trubchik
+
 import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;
@@ -26,6 +28,8 @@ public class MineFieldGenerator {
 			int j = (int) (Math.random() * 100);
 			output = outputMineField(i, j, 0.5, output);
 		}
+		
+		output += "0 0\n";
 
 		writeToFile(output);
 	}
